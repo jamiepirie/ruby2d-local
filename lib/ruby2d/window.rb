@@ -77,7 +77,6 @@ module Ruby2D
       else
         add_object(o)
       end
-      @dirty = true
     end
     
     def remove(o)
@@ -91,7 +90,6 @@ module Ruby2D
       else
         false
       end
-      @dirty = true
     end
 
     def z_sort
