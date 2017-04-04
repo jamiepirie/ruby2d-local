@@ -8,6 +8,7 @@ module Ruby2D
     def initialize(x=0, y=0, s=100, c='white')
       @type_id = 2
       @x, @y = x, y
+      @z ||= 0
       @width = @height = @size = s
       update_coords(x, y, s, s)
 
