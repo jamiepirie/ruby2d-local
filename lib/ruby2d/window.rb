@@ -96,6 +96,7 @@ module Ruby2D
 
     def z_sort
       @objects.sort_by! {|o| o.z }
+      @dirty = false
     end
     
     def clear
