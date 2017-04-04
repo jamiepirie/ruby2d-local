@@ -37,7 +37,7 @@ module Ruby2D::Application
     end
 
     def z_sort
-      @@window.dirty == true
+      @@window.dirty = true
     end
     
     def update(&proc)

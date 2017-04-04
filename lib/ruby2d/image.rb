@@ -5,7 +5,7 @@ module Ruby2D
     include Renderable
 
     attr_accessor :x, :y, :width, :height, :data
-    attr_reader :path, :color
+    attr_reader :path, :color, :z
     
     def initialize(x, y, path)
       
@@ -17,7 +17,7 @@ module Ruby2D
       #     end
       
       @type_id = 3
-      @x, @y, @path = x, y, path
+      @x, @y, @z, @path = x, y, 0, path
       @color = Color.new([1, 1, 1, 1])
       init(path)
       add
